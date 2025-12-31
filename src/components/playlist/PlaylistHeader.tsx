@@ -1,4 +1,4 @@
-import { View, SafeAreaView, TouchableOpacity } from 'react-native'
+import { View, TouchableOpacity } from 'react-native'
 import React, { FC } from 'react'
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { Colors } from '@/utils/Constants';
@@ -6,11 +6,11 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { playlistStyles } from '@/styles/playlistStyles';
 import CustomText from '../ui/CustomText';
 import { router } from 'expo-router';
-
+import { SafeAreaView } from 'react-native-safe-area-context'
 const PlaylistHeader: FC<{ title: string, genre: string }> = ({ title, genre }) => {
   return (
     <View>
-      <SafeAreaView />
+      {/* <SafeAreaView /> */}
       <View style={playlistStyles.container}>
         <View style={playlistStyles.flexRowGap}>
           <TouchableOpacity onPress={() => router.back()}>

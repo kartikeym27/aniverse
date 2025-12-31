@@ -23,8 +23,8 @@ const VideoPlayer: FC<{ item: Anime }> = ({ item }) => {
         setIsPaused(false);
         setIsLoading(true);
     }
-
-    return (
+    console.log(item?.stream_url);
+            return (
         <View style={interactionStyles.videoContainer}>
             <Video
                 ref={ref}

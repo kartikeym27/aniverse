@@ -18,7 +18,9 @@
       "infoPlist": {
         "CFBundleURLTypes": [
           {
-            "CFBundleURLSchemes": ["com.googleusercontent.apps.522253367515-fe4l3ovlaevaik4v17ri1ptl3srtheq2"]
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.522253367515-fe4l3ovlaevaik4v17ri1ptl3srtheq2"
+            ]
           }
         ]
       }
@@ -29,7 +31,11 @@
         "foregroundImage": "./src/assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.kartikey.aniverse"
+      "package": "com.kartikey.aniverse",
+      "permissions": [
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -59,6 +65,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "fa9b6561-9d88-44aa-8156-a823756f3757"
+      }
     }
   }
 }

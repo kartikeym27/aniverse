@@ -36,7 +36,7 @@ const Page = () => {
     <SafeAreaView style={commonStyles.containerBlack}>
       <Animated.View style={homeStyles.animatedHeader}>
         <Animated.View style={[homeStyles.glassmorphismContainer, animatedHeaderStyle]}>
-          <Image source={require('@/assets/icons/thumb2.png')} style={homeStyles.glassmorphismBackground}/>
+          <Image source={require('@/assets/icons/thumb2.jpg')} style={homeStyles.glassmorphismBackground}/>
         </Animated.View>
         <HomeHeader/>
       </Animated.View>
